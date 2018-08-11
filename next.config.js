@@ -1,2 +1,11 @@
-const withTypescript = require('@zeit/next-typescript')
-module.exports = withTypescript()
+const getRoutes = require('./routes');
+
+module.exports = {
+  webpack(config) {
+    config.node = {
+      fs: 'empty',
+    };
+    return config;
+  },
+  exportPathMap: getRoutes,
+}
