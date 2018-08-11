@@ -10,7 +10,7 @@ const Page = (props) => (
       <ul>
           {props.posts.map(post => (
             <li key={post.href}>
-              <Link href={"/posts/" + post.href}>
+              <Link as={"/posts/" + post.href} href={`/post_content?id=${post.href}`}>
                 <a>{post.title}</a>
               </Link>
             </li>

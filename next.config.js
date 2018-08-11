@@ -1,4 +1,6 @@
-const getRoutes = require('./routes');
+const getRoutes = async () => {
+  return {};
+};
 
 module.exports = {
   webpack(config) {

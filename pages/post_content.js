@@ -14,8 +14,9 @@ const Page = (props) => (
   </div>
 )
 
-const getInitialProps = async ({ req }) => {
-  const post = await getPostContent('first.md');
+const getInitialProps = async ({ query }) => {
+  const fname = `${query.id}.md`;
+  const post = await getPostContent(fname);
   return {post};
 };
 
