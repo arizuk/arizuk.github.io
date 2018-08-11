@@ -1,10 +1,11 @@
 import Link from 'next/link'
+import '../styles/header.scss'
 export default () => (
-  <div>
-    <ul>
+  <aside className="header">
+    <ul className="nav">
       <li>
         <Link href="/">
-          <a>about</a>
+          <a>About</a>
         </Link>
       </li>
       <li>
@@ -13,5 +14,12 @@ export default () => (
         </Link>
       </li>
     </ul>
-  </div>
+    <div className="logo">
+      <Link href="/">
+        <a>
+          <img src="https://avatars0.githubusercontent.com/u/923924?v=4" className="logo-avatar" />
+        </a>
+      </Link>
+    </div>
+  </aside>
 )

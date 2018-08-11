@@ -2,20 +2,39 @@ import Layout from '../components/layout';
 import Link from 'next/link'
 import {getPostLists} from '../utils/index'
 
-
 const Page = (props) => (
   <div>
     <Layout>
-      <h1>Posts</h1>
-      <ul>
-          {props.posts.map(post => (
-            <li key={post.href}>
-              <Link as={"/posts/" + post.href} href={`/post_content?id=${post.href}`}>
-                <a>{post.title}</a>
-              </Link>
+      <section>
+        <h3 className="code">2018</h3>
+        {props.posts.map(post => (
+          <ul key={post.href}>
+            <li>
+              <div className="post-date code">
+                Aug 8
+              </div>
+              <div className="title">
+                <Link as={"/posts/" + post.href} href={`/_post_content?id=${post.href}`}>
+                  <a>{post.title}</a>
+                </Link>
+              </div>
             </li>
+          </ul>
           ))}
-      </ul>
+      </section>
+      <style jsx>{`
+        ul, ol {
+          margin: 40px 0;
+          padding-left: 50px;
+        }
+        ul li {
+          word-wrap: break-word;
+        }
+        ul img {
+          margin: 40px 0;
+          border-radius: 5px;
+        }
+      `}</style>
     </Layout>
   </div>
 )
