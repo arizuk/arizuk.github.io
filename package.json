@@ -18,7 +18,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "node scripts/build_posts_json.js && next build && next export"
   },
   "author": "",
   "license": "ISC"
