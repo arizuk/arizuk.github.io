@@ -19,7 +19,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "NODE_ENV=production node scripts/build_posts_json.js && next build && next export",
+    "export": "NODE_ENV=production node scripts/build_posts_json.js && next export",
+    "rebuild": "NODE_ENV=production rm -rf out/* && node scripts/build_posts_json.js && next build && next export",
     "deploy": "npm run export && cd out && git add . && git commit -am deploy && git push origin master"
   },
   "author": "",

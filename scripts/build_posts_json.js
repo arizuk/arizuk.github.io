@@ -6,7 +6,7 @@ const postsJson = './static/posts.json';
 
 const posts = fs.readdirSync(postsDir).map(file => {
   const mdMeta = fm(fs.readFileSync(postsDir + "/" + file, 'utf-8'));
-  const date = file.split("_")[0];
+  const date = file.split("-")[0];
   return {
     href: file.replace(/.md$/, ''),
     title: mdMeta.attributes.title,

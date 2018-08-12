@@ -7,12 +7,14 @@ import moment from 'moment'
 import Layout from '../components/layout';
 import {getPostContent} from '../utils/index'
 
-const md = MarkdownIt();
+const md = MarkdownIt({
+  linkify: true
+});
 const Page = ({title, date, html, router}) => {
   return (
     <div>
       <Layout>
-        <article>
+        <article className="post">
           <div className="center">
             <h1>{title}</h1>
             <time className="code">{moment(date).format('MMMM DD, Y')}</time>
@@ -20,6 +22,11 @@ const Page = ({title, date, html, router}) => {
           <div className="divider"></div>
           <div dangerouslySetInnerHTML={{__html: html}} />
         </article>
+        <style jsx>{`
+          .post {
+            max-width: 800px;
+          }
+        `}</style>
         <div className="page-navigation code">
           <Link href="/posts"><a title="back to index">Index</a></Link>
         </div>
@@ -34,7 +41,7 @@ const getInitialProps = async ({ query }) => {
   const meta = fm(post);
   return {
     title: meta.attributes.title,
-    date: fname.split("_")[0],
+    date: fname.split("-")[0],
     html: md.render(meta.body),
   };
 };
