@@ -1,15 +1,17 @@
 import Link from 'next/link'
 import { withRouter } from 'next/router'
 import MarkdownIt from 'markdown-it'
+import hightlightPlugin from 'markdown-it-highlightjs'
 import fm from 'front-matter'
 import moment from 'moment'
 
+import '../styles/post_content.scss'
 import Layout from '../components/layout';
 import {getPostContent} from '../utils/index'
 
-const md = MarkdownIt({
-  linkify: true
-});
+const md = MarkdownIt({ linkify: true })
+  .use(hightlightPlugin);
+
 const Page = ({title, date, html, router}) => {
   return (
     <div>
@@ -20,13 +22,8 @@ const Page = ({title, date, html, router}) => {
             <time className="code">{moment(date).format('MMMM DD, Y')}</time>
           </div>
           <div className="divider"></div>
-          <div dangerouslySetInnerHTML={{__html: html}} />
+          <div className="markdown" dangerouslySetInnerHTML={{__html: html}} />
         </article>
-        <style jsx>{`
-          .post {
-            max-width: 800px;
-          }
-        `}</style>
         <div className="page-navigation code">
           <Link href="/posts"><a title="back to index">Index</a></Link>
         </div>

@@ -39,7 +39,6 @@ const getRoutes = async () => {
 module.exports = {
   exportPathMap: getRoutes,
 };
-
 ```
 
 [コード](https://github.com/arizuk/arizuk.github.io/blob/f1ab8fbc48c74f9e5186aded4389ae95ce8e7a61/next.config.js#L4)
