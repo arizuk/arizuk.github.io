@@ -15,7 +15,7 @@ const md = MarkdownIt({ linkify: true })
 const Page = ({title, date, html, router}) => {
   return (
     <div>
-      <Layout>
+      <Layout title={title}>
         <article className="post">
           <div className="center">
             <h1>{title}</h1>
