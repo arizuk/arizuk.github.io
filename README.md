@@ -1,13 +1,12 @@
 This repository contains a source of [my personal site](https://arizuk.github.io/). The site is built with next.js.
 
-# Deploy
-## Setup
+# Setup
 
 ```
 git worktree add out master
 ```
 
-## Run
+# Deploy
 
 ```
 npm run deploy
