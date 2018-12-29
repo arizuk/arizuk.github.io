@@ -9,9 +9,11 @@ title: (2018) -> 2019
 * 2-3月
   * 転職した
   * 転職にあたり、人生初のインフラ作業に関わり始めた
+  * DL4USという松尾研のDL講座を修了した。ボケを生成するネットワークを一夜漬けで作り、全く動かなかった。
 * 4-6月
-  * kaggle始めた
+  * kaggleを始めた
 * 6-8月
+  * PythonとKerasによるディープラーニングを熟読した
   * [home credit](https://www.kaggle.com/c/home-credit-default-risk) で敗れた
 * 9月-12月
   * Rustで競技プログラミングを始めた(AtCoder)
