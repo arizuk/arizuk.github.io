@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Header from './header'
 import Footer from './footer'
 
+const GA_TRACKING_ID = "UA-131422067-1"
+
 export default (props) => (
   <div>
     <Head>
@@ -14,6 +16,17 @@ export default (props) => (
       <title>{props.title || 'arizuk.github.io'}</title>
       <meta name="description" content="arizuk.github.io" />
       <meta name="author" content="Masaki Arizuka" />
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)};
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}');
+          `,
+        }}
+      />
     </Head>
     <Header />
     <div id="content">
