@@ -1,4 +1,4 @@
-This is a source of https://arizuk.github.io/. It is built with next.js.
+This repository contains a source of [my personal site](https://arizuk.github.io/). The site is built with next.js.
 
 # Deploy
 ## Setup
