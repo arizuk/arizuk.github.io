@@ -20,7 +20,6 @@ title: AtCoderで9ヶ月かけて青色になりました
 ![解いた問題数](https://user-images.githubusercontent.com/923924/59977064-9f1e2080-9607-11e9-9b83-3a2ddb3a1763.png)
 
 
-### 活動
 ![活動](https://user-images.githubusercontent.com/923924/59977063-9f1e2080-9607-11e9-868a-e72c8dc921ca.png)
 
 
