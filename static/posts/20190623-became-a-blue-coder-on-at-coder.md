@@ -5,17 +5,6 @@ title: AtCoderで9ヶ月かけて青色になりました
 青色を目標に9ヶ月間競技プログラミングをやっていたのですが、2度の腰痛の乗り越えて無事目標を達成できたので記念にポストを残しておきます。
 青色リーチ状態から大分停滞したので、なかなか大変でした。。
 
-### Ratingの推移
-![Ratingの推移](https://user-images.githubusercontent.com/923924/59977015-0c7d8180-9607-11e9-8afa-524cbb7235da.png)
-
-### 解いた問題数
-![解いた問題数](https://user-images.githubusercontent.com/923924/59977064-9f1e2080-9607-11e9-9b83-3a2ddb3a1763.png)
-
-
-### 活動
-![活動](https://user-images.githubusercontent.com/923924/59977063-9f1e2080-9607-11e9-868a-e72c8dc921ca.png)
-
-
 # History
 * 2018/09/29: ABC初参戦。1043で緑パフォ
 * 2018/10/16: 2回目のABCで全完。初のパフォーマンス1600
@@ -24,6 +13,15 @@ title: AtCoderで9ヶ月かけて青色になりました
 * 2019/06/02: AGCで初回以来の緑パフォ。リーチ状態から1529まで戻される。集中して競プロに取り組む。
 * 2019/06/15: 企業コンでまたしても緑パフォ。再リーチ状態から1536まで戻される。精神的ダメージを食らう。
 * 2019/06/22: 自己最高記録で、青色達成!
+
+![Ratingの推移](https://user-images.githubusercontent.com/923924/59977015-0c7d8180-9607-11e9-8afa-524cbb7235da.png)
+
+### 解いた問題数
+![解いた問題数](https://user-images.githubusercontent.com/923924/59977064-9f1e2080-9607-11e9-9b83-3a2ddb3a1763.png)
+
+
+![活動](https://user-images.githubusercontent.com/923924/59977063-9f1e2080-9607-11e9-868a-e72c8dc921ca.png)
+
 
 # 競プロをやって良かったこと
 * アルゴリズムや計算量に強くなる
