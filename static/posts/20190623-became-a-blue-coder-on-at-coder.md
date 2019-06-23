@@ -1,12 +1,12 @@
 ---
-title: 9ヶ月かけてAtCoderで青になった記念
+title: AtCoderで9ヶ月かけて青色になりました
 ---
 
-青色を目標に9ヶ月間競技プログラミングをやっていたのですが、無事目標を達成できたので記念にポストを残しておきます。
+青色を目標に9ヶ月間競技プログラミングをやっていたのですが、2度の腰痛の乗り越えて無事目標を達成できたので記念にポストを残しておきます。
 青色リーチ状態から大分停滞したので、なかなか大変でした。。
 
-### 推移
-![推移](https://user-images.githubusercontent.com/923924/59977015-0c7d8180-9607-11e9-8afa-524cbb7235da.png)
+### Ratingの推移
+![Ratingの推移](https://user-images.githubusercontent.com/923924/59977015-0c7d8180-9607-11e9-8afa-524cbb7235da.png)
 
 ### 解いた問題数
 ![解いた問題数](https://user-images.githubusercontent.com/923924/59977064-9f1e2080-9607-11e9-9b83-3a2ddb3a1763.png)
