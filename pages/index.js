@@ -9,6 +9,7 @@ const Page = (props) => {
       <article>
         <h1 className="title">Masaki Arizuka</h1>
         <div className="hr"></div>
+
         <div className="links">
           <h2>Links</h2>
           <ul>
@@ -20,6 +21,19 @@ const Page = (props) => {
             </li>
             <li>
               <a href="https://www.kaggle.com/arizuk" target="_blank">Kaggle</a>
+            </li>
+          </ul>
+        </div>
+        <div className="hr"></div>
+
+        <div className="contact">
+          <h2>Contact</h2>
+          <ul>
+            <li>
+              <a href="linkedin.com/in/masakiarizuka" target="_blank">Linkedin</a>
+            </li>
+            <li>
+              masaki.arizuka(at)gmail.com
             </li>
           </ul>
         </div>
