@@ -20,6 +20,9 @@ const Page = (props) => {
               <a href="https://atcoder.jp/users/arzk" target="_blank">AtCoder</a>
             </li>
             <li>
+              <a href="https://codeforces.com/profile/arzk" target="_blank">Codeforces</a>
+            </li>
+            <li>
               <a href="https://www.kaggle.com/arizuk" target="_blank">Kaggle</a>
             </li>
           </ul>
