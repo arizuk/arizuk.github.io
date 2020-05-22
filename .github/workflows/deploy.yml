@@ -13,9 +13,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "14.2"
-      - name: Create master worktree
-        run: git worktree add -b master master
-      - run: |
+      - name: Setup git repo
+        run: |
+          git fetch
+          git worktree add -b master master
           git config --global user.email "masaki.arizuka+ci@gmail.com"
           git config --global user.name "ci@github"
       - run: npm install
