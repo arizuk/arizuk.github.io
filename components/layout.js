@@ -1,8 +1,7 @@
 import Head from 'next/head';
 import Header from './header'
 import Footer from './footer'
-
-const GA_TRACKING_ID = "UA-131422067-1"
+import { GA_TRACKING_ID } from '../lib/gtag'
 
 export default (props) => (
   <div>
@@ -23,7 +22,9 @@ export default (props) => (
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments)};
             gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}');
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
           `,
         }}
       />
