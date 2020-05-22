@@ -13,12 +13,15 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "14.2"
+      - name: Checkout master
+        uses: actions/checkout@v2
+        with:
+          branch: master
+          path: master
       - name: Setup git repo
         run: |
-          git fetch
-          git worktree add -b master master
           git config --global user.email "masaki.arizuka+ci@gmail.com"
           git config --global user.name "ci@github"
-          cd master && git show
+          cd master && ls
       # - run: npm install
       # - run: npm run deploy
