@@ -33,7 +33,7 @@ const Page = (props) => {
           <h2>Contact</h2>
           <ul>
             <li>
-              <a href="linkedin.com/in/masakiarizuka" target="_blank">Linkedin</a>
+              <a href="https://linkedin.com/in/masakiarizuka" target="_blank">Linkedin</a>
             </li>
             <li>
               masaki.arizuka(at)gmail.com
