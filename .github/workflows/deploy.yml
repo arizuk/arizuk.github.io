@@ -14,6 +14,6 @@ jobs:
         with:
           node-version: "10.8"
       - name: Create master worktree
-        run: git worktree add out master
+        run: git worktree add -b out master
       - run: npm install
       - run: npm run deploy
