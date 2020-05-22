@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@zeit/next-sass": "^0.2.0",
+    "@zeit/next-sass": "^1.0.1",
     "front-matter": "^2.3.0",
     "markdown-it": "^8.4.2",
     "markdown-it-highlightjs": "^3.0.0",
     "moment": "^2.22.2",
-    "next": "^6.1.1",
-    "node-sass": "^4.9.3",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "next": "^9.4.2",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {},
   "scripts": {
