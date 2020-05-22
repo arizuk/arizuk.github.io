@@ -22,6 +22,5 @@ jobs:
         run: |
           git config --global user.email "masaki.arizuka+ci@gmail.com"
           git config --global user.name "ci@github"
-          cd master && ls
-      # - run: npm install
-      # - run: npm run deploy
+      - run: npm install
+      - run: npm run deploy
