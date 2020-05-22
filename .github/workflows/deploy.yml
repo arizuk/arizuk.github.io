@@ -1,4 +1,4 @@
-name: Build and deploy
+name: Deploy
 
 on:
   push:
@@ -6,14 +6,14 @@ on:
       - docs
 
 jobs:
-  build:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        node-version: "10.8"
-    - name: Create master worktree
-      run: git worktree add out master
-    - run: npm install
-    - run: npm run deploy
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "10.8"
+      - name: Create master worktree
+        run: git worktree add out master
+      - run: npm install
+      - run: npm run deploy
