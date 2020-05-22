@@ -21,8 +21,7 @@
     "build": "next build",
     "start": "next start",
     "export": "NODE_ENV=production node scripts/build_posts_json.js && next export",
-    "rebuild": "NODE_ENV=production rm -rf out/* && node scripts/build_posts_json.js && next build && next export",
-    "deploy": "npm run build && npm run export && cd out && git add . && git commit -am deploy && git push origin master"
+    "deploy": "npm run build && npm run export && rm -rf master/* && cp -r out/* master && cd master && git add . && git commit -am deploy && git push origin master"
   },
   "author": "",
   "license": "ISC"
