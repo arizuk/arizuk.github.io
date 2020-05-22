@@ -16,7 +16,8 @@ jobs:
       - name: Create master worktree
         run: git worktree add -b out master
       - run: |
-          git config --global user.email "ci@github.com"
+          git config --global user.email "masaki.arizuka+ci@gmail.com"
           git config --global user.name "ci@github"
+          git remote set-url origin https://arizuk:${{ secrets.GITHUB_TOKEN }}@github.com/arizuk/arizuk.github.io.git
       - run: npm install
       - run: npm run deploy
