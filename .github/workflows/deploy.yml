@@ -19,5 +19,6 @@ jobs:
           git worktree add -b master master
           git config --global user.email "masaki.arizuka+ci@gmail.com"
           git config --global user.name "ci@github"
-      - run: npm install
-      - run: npm run deploy
+          cd master && git show
+      # - run: npm install
+      # - run: npm run deploy
