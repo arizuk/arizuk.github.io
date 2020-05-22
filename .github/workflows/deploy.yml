@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: "10.8"
+          node-version: "14.2"
       - name: Create master worktree
         run: git worktree add -b out master
       - run: npm install
