@@ -18,6 +18,11 @@ jobs:
       - run: |
           git config --global user.email "masaki.arizuka+ci@gmail.com"
           git config --global user.name "ci@github"
+          git remote show origin
           git remote set-url origin https://arizuk:${{ secrets.GITHUB_TOKEN }}@github.com/arizuk/arizuk.github.io.git
+          cd master
+          ls
+          git status
+          git branch
       - run: npm install
       - run: npm run deploy
