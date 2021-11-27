@@ -7,7 +7,7 @@ This is [my personal site](https://arizuk.github.io/) source files power by Next
 node: v14.2.0
 ```
 
-# Setup
+# SetUp
 
 ```
 git worktree add master master
