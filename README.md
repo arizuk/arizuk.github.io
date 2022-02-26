@@ -1,26 +1,15 @@
 # arizuk.github.io
-This is [my personal site](https://arizuk.github.io/) source files power by Next.js.
+This is the source of https://arizuk.github.io/ that powered by Next.js.
 
-# Requirements
+## Requirements
 
 ```
 node: v14.2.0
 ```
 
-# SetUp
+## Development
 
 ```
-git worktree add master master
-```
-
-# Development
-
-```
+npm install
 npm run dev
-```
-
-# Deploy
-
-```
-npm run deploy
 ```
