@@ -20,8 +20,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "NODE_ENV=production node scripts/build_posts_json.js && next export",
-    "deploy": "npm run build && npm run export && rm -rf master/* && cp -r out/* master && cd master && git add . && git commit -am deploy && git push origin master"
+    "export": "NODE_ENV=production node scripts/build_posts_json.js && next export"
   },
   "author": "",
   "license": "ISC"

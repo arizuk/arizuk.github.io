@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - docs
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -13,14 +14,13 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "14.2"
-      - name: Checkout master
-        uses: actions/checkout@v2
+      - name: Build
+        run:
+          npm ci
+          npm run build
+          npm run export
+      - uses: peaceiris/actions-gh-pages@v3
         with:
-          ref: master
-          path: master
-      - name: Setup git repo
-        run: |
-          git config --global user.email "masaki.arizuka+ci@gmail.com"
-          git config --global user.name "ci@github"
-      - run: npm install
-      - run: npm run deploy
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: master
+          publish_dir: ./out
