@@ -1,6 +1,5 @@
 # arizuk.github.io
-[![pages-build-deployment](https://github.com/arizuk/arizuk.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/arizuk/arizuk.github.io/actions/workflows/pages/pages-build-deployment)
-
+[![Deploy](https://github.com/arizuk/arizuk.github.io/actions/workflows/deploy.yml/badge.svg?branch=docs)](https://github.com/arizuk/arizuk.github.io/actions/workflows/deploy.yml)
 
 This is the source for https://arizuk.github.io/
 
