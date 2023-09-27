@@ -4,6 +4,7 @@ import { getAllPosts, readPostContent } from "@/lib/posts";
 import dayjs from "dayjs";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 export default function Page({ params }: { params: { slug: string } }) {
   const { data, content } = matter(readPostContent(params.slug));
@@ -18,7 +19,11 @@ export default function Page({ params }: { params: { slug: string } }) {
         </span>
       </p>
       <Divider />
-      <ReactMarkdown children={content} className="prose max-w-[800px]" />
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        children={content}
+        className="prose max-w-[800px]"
+      />
     </main>
   );
   return;
