@@ -30,10 +30,10 @@ const PostList: React.FC<Props> = ({ posts }) => {
             </h2>
             <ul className="list-disc list-inside">
               {posts.map((post) => (
-                <li key={post.href} className="mt-4 flex justify-between">
+                <li key={post.slug} className="mt-4 flex justify-between">
                   <Link
                     className="hover:underline"
-                    href={`/posts/${post.href}`}
+                    href={`/posts/${post.slug}`}
                   >
                     {post.title}
                   </Link>{" "}

@@ -46,5 +46,5 @@ export default function Page({ params }: { params: { slug: string } }) {
 }
 
 export function generateStaticParams() {
-  return getAllPosts().map((post) => ({ slug: post.href }));
+  return getAllPosts().map((post) => ({ slug: post.slug }));
 }
