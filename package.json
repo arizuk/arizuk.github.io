@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "build_posts_json": "node scripts/build_posts_json.mjs"
+    "lint": "next lint"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.10",
